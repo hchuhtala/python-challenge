@@ -46,18 +46,26 @@ with open(csvpath, newline='') as csvfile:
     print("Financal Analysis:")
     print("--------------------")
     print("Total Months: " + str(month_count))
+
     # The net total amount of "Profit/Losses" over the entire period
     print("Total Value: $"+ str(total))
     #print("Total Value: $"+ str(sum(money)) why doesn't this work??
+
     # The average of the changes in "Profit/Losses" over the entire period
     change = [j - i for i, j in zip(money[: -1], money[1 :])] #can you explain this??
     avg = sum(change) / month_count #why isn't avg a float?
     #avg = total_delta / month_count
     print("Average Change: $" + str(avg))
     #print("Average Change: $" + str(round(avg)) Why doesn't this work??
+
     # The greatest increase in profits (date and amount) over the entire period
     max_delta = max(change)
-    print("Greatest Increase: $" + str(max_delta))
+    for x in change
+        if change == max_delta:
+            return(x)
+    
+    print("Greatest Increase: $" + date[x] + str(max_delta))
+
     # The greatest decrease in losses (date and amount) over the entire period
     min_delta = min(change)
     print("Greatest Decrease: $" + str(min_delta))

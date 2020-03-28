@@ -1,0 +1,21 @@
+Election Results:
+--------------------
+Total Number of Votes: 3521001
+--------------------
+Results by Number of Votes:
+--------------------
+Khan 2218231
+Correy 704200
+Li 492940
+O'Tooley 105630
+--------------------
+Results by Percent of Votes:
+--------------------
+Khan 63
+Correy 20
+Li 14
+O'Tooley 3
+--------------------
+Election Winner:
+--------------------
+Khan

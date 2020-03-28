@@ -52,3 +52,20 @@ with open(csvpath, newline='') as csvfile:
     print("Average Change: $" + str(round(avg))) 
     print("Greatest Increase: " + str(max_key) + " $" + str(max_value))
     print("Greatest Decrease: " + str(min_key) + " $" + str(min_value))
+
+# Specify the file to write to
+output_path = os.path.join("financal_analysis.txt")
+
+# Open the file using "write" mode. Specify the variable to hold the contents
+txtfile = open(output_path, 'w')
+
+# Write the first row (column headers)
+txtfile.write("Financal Analysis:\n")
+
+# Write the rest of the rows
+txtfile.write("Total Months: " + "$" + str(month_count) + "\n")
+txtfile.write("Total Value: " + "$" + str(sum(money)) + "\n")
+txtfile.write("Average Change: " + "$" + str(round(avg)) + "\n")
+txtfile.write("Greatest Increase: " + str(max_key) + " $" + str(max_value) + "\n")
+txtfile.write("Greatest Decrease: " + str(min_key) + " $" + str(min_value) + "\n")
+txtfile.close()
